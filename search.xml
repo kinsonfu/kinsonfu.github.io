@@ -12,4 +12,12 @@
         <tag>menu</tag>
       </tags>
   </entry>
+  <entry>
+    <title><![CDATA[hexo实现在网站底部加上访问量]]></title>
+    <url>%2F2018%2F04%2F01%2Fhexo%E5%AE%9E%E7%8E%B0%E5%9C%A8%E7%BD%91%E7%AB%99%E5%BA%95%E9%83%A8%E5%8A%A0%E4%B8%8A%E8%AE%BF%E9%97%AE%E9%87%8F%2F</url>
+    <content type="text"><![CDATA[打开\themes\next\layout_partials\footer.swig文件,在copyright前加入脚本依赖： 1&lt;script async src=&quot;https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;&lt;/script&gt; 在footer.swig文件文件下合适位置加上代码，此处我是放在最后面： 123456789&lt;br /&gt;&lt;div class=&quot;powered-by&quot;&gt; &lt;i class=&quot;fa fa-user-md&quot;&gt;&lt;/i&gt;&lt;span id=&quot;busuanzi_container_site_uv&quot;&gt; 本站用户访问总数 : &lt;span id=&quot;busuanzi_value_site_uv&quot;&gt;&lt;/span&gt; &lt;/span&gt; &amp;nbsp; | &amp;nbsp; &lt;i class=&quot;fa fa-eye&quot;&gt;&lt;/i&gt;&lt;span id=&quot;busuanzi_container_site_pv&quot;&gt; 本站总访客数 : &lt;span id=&quot;busuanzi_value_site_pv&quot;&gt;&lt;/span&gt; &lt;/span&gt;&lt;/div&gt; 效果如下： 说明： 1、uv的方式，单个用户连续点击n篇文章，只记录1次访客数 2、pv的方式，单个用户连续点击n篇文章，记录n次访问量]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+  </entry>
 </search>

@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[hexo增加搜索菜单功能]]></title>
     <url>%2F2018%2F04%2F01%2Fhexo%E5%A2%9E%E5%8A%A0%E6%90%9C%E7%B4%A2%E8%8F%9C%E5%8D%95%E5%8A%9F%E8%83%BD%2F</url>
-    <content type="text"><![CDATA[安装hexo-generator-searchdb列表内容 在站点的根目录下执行以下命令：npm install hexo-generator-searchdb –save 配置站点配置文件新增以下内容到当前主题的配置文件下任意位置： 12345search: path: search.xml field: post format: html limit: 10000 修改使配置主题配置文件的本地搜索生效 123# Local searchlocal_search: enable: true 注意：要想让搜索菜单按钮显示中文，需修改存放博客主目录下的——config.yaml文件的language设置为zh-Hans，即 1language: zh-Hans 完后便可以开心的的使用搜索功能了，祝好运]]></content>
+    <content type="text"><![CDATA[安装hexo-generator-searchdb列表内容 在站点的根目录下执行以下命令： npm install hexo-generator-searchdb –save 配置站点配置文件 新增以下内容到当前主题的配置文件下任意位置： 12345search: path: search.xml field: post format: html limit: 10000 修改使配置主题配置文件的本地搜索生效 123# Local searchlocal_search: enable: true 注意：要想让搜索菜单按钮显示中文，需修改存放博客主目录下的——config.yaml文件的language设置为zh-Hans，即 1language: zh-Hans 完后便可以开心的的使用搜索功能了，祝好运]]></content>
       <categories>
         <category>hexo</category>
       </categories>

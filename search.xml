@@ -28,4 +28,16 @@
         <category>hexo</category>
       </categories>
   </entry>
+  <entry>
+    <title><![CDATA[springboot启动报错]]></title>
+    <url>%2F2017%2F10%2F01%2FAn%20incompatible%20version%20%5B1.2.7%5D%20of%20the%20APR%20based%20Apache%20Tomcat%20Native%20library%20is%20installed......%2F</url>
+    <content type="text"><![CDATA[最近想着写一个转盘抽奖功能，打算用springboot框架，于是乎新建了一个springboot项目，启动后访问给定的页面url老是报错：An incompatible version [1.2.7] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]，我对应的页面文件格式是html，以前用的都是可以正常访问的，这次很诡异，也很郁闷，网上搜了相关问题也没解决，后面看pom文件发现少引入了模板引擎依赖，我这边用的是thymeleaf模板引擎，依赖如下： 1234&lt;dependency&gt; &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt; &lt;artifactId&gt;spring-boot-starter-thymeleaf&lt;/artifactId&gt;&lt;/dependency&gt; 加入后重新启动运行访问，正常了]]></content>
+      <categories>
+        <category>springboot</category>
+      </categories>
+      <tags>
+        <tag>springboot</tag>
+        <tag>theamleaf</tag>
+      </tags>
+  </entry>
 </search>
